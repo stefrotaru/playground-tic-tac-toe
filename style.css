@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.main-btn {
+    padding: 1.5rem;
+    border: none;
+    border-radius: .75rem;
+    font-size: 36px;
+    color: white;
+    background: linear-gradient(90deg, rgba(183,174,238,1) 0%, rgba(63,199,217,1) 100%);
+    box-shadow: 5px 5px black;
+}
+.main-btn:hover {}
+.main-btn:active {
+    transform: scale(95%);
+}
+
+p {
+    font-size: 24px;
+    text-align: center;
+    min-width: 0;
+    min-height: 0;
+}
+
+.tic-tac-toe {
+    height: 65%;
+    width: 35%;
+    border: 1px solid black;
+    font-size: 6rem;
+    font-family: 'Merienda One', cursive;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.tic-tac-toe div {
+    border: 1px solid black;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tic-tac-toe div:hover {
+    background-color: rgba(183,174,238,.5);
+}
+.tic-tac-toe div:active {
+    background-color: rgba(63,199,217,.5);
+}
+
+@media (max-width: 1450px) {
+    .tic-tac-toe {
+        height: 60%;
+        width: 42.5%;
+        font-size: 5rem;
+    }
+}
+@media (max-width: 1250px) {
+    .tic-tac-toe {
+        height: 60%;
+        width: 50%;
+        font-size: 4.5rem;
+    }
+}
+@media (max-width: 1000px) {
+    .tic-tac-toe {
+        height: 55%;
+        width: 60%;
+        font-size: 4rem;
+    }
+}
+@media (max-width: 750px) {
+    .tic-tac-toe {
+        height: 52.5%;
+        width: 70%;
+        font-size: 3.5rem;
+    }
+}
+@media (max-width: 500px) {
+    .tic-tac-toe {
+        height: 50%;
+        width: 80%;
+        font-size: 3.25rem;
+    }
+}
+@media (max-width: 350px) {
+    .tic-tac-toe {
+        height: 40%;
+        width: 90%;
+        font-size: 3rem;
+    }
+}
