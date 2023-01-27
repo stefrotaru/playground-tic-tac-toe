@@ -1,8 +1,7 @@
-// let mainBtn;
-
 const initMainPage = () => {
     let btn = document.createElement('button');
     btn.classList.add('main-btn');
+    btn.classList.add('waddap-btn');
     btn.textContent = 'Waddap';
     document.querySelector('body').appendChild(btn)
 
@@ -195,8 +194,6 @@ const ticTacToeGame = () => {
             }
         })
     })
-
-
 }
 
 const initApp = () => {
@@ -205,12 +202,12 @@ const initApp = () => {
         document.querySelector('body').appendChild(newMain);
         let firstP = document.createElement('p');
         firstP.classList.add('first-text');
-        firstP.innerText = 'Hello there, traveler!';
+        firstP.innerText = 'Hello there, traveler! 👋';
         document.querySelector('main').appendChild(firstP);
     } else if (document.querySelector('.second-text') === null) {
         let secondP = document.createElement('p');
         secondP.classList.add('second-text');
-        secondP.innerText = 'Click again the Waddap button to play tic-tac-toe';
+        secondP.innerText = 'Click again the Waddap button to play tic-tac-toe! 🕹️';
         document.querySelector('main').appendChild(secondP);
     } else {
         while (document.querySelector('body').lastChild == document.querySelector('.main-btn') || document.querySelector('body').lastChild == document.querySelector('main')) {

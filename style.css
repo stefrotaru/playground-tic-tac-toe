@@ -19,6 +19,10 @@ body {
     gap: 3rem;
 }
 
+.waddap-btn {
+    position: fixed;
+}
+
 .main-btn {
     padding: 1.5rem;
     border: none;
@@ -34,10 +38,15 @@ body {
 }
 
 p {
-    font-size: 24px;
+    font-size: 2rem;
     text-align: center;
-    min-width: 0;
-    min-height: 0;
+    padding-bottom: 2rem;
+
+    position: relative;
+    bottom: 8rem;
+
+    animation-name: textAppear;
+    animation-duration: 1s;
 }
 
 .tic-tac-toe {
@@ -106,4 +115,9 @@ p {
         width: 90%;
         font-size: 3rem;
     }
+}
+
+@keyframes textAppear {
+    0% {transform: translateY(1.5rem);}
+    100% {transform: translateY(0);}
 }
